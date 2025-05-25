@@ -1,0 +1,73 @@
+@import '../../assets/colors.scss';
+
+.sidebar {
+	background-color: $purple;
+	height: 100vh;
+	width: 20%;
+	overflow-y: scroll;
+	padding: 20px 0;
+
+	.sidebarHeader {
+		text-align: center;
+		margin-bottom: 20px;
+		border-bottom: 1px solid $grey;
+		padding: 20px 10px;
+
+		.search-bar {
+			width: 100%;
+			padding: 10px 5px;
+			border-radius: 5px;
+			border: none;
+		}
+	}
+
+
+	ul {
+		.list-item {
+			list-style: none;
+			width: 100%;
+			padding: 10px 20px;
+			font-size: 16px;
+			text-transform: capitalize;
+			color: $white;
+			font-weight: bold;
+
+			.list-link {
+				color: $white;
+				text-decoration: none;
+			}
+
+			&:hover {
+				background-color: $white;
+				color: $purple;
+				cursor: pointer;
+				transition: all 0.3s ease-in-out;
+
+				.list-link {
+					color: $purple;
+				}
+			}
+		}
+	}
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px $black; 
+  border-radius: 5px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $white; 
+  border-radius: 5;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: $white; 
+}
